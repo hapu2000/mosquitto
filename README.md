@@ -1,13 +1,8 @@
 # mosquitto
 
-## MQTT credentials
-username: mqtt
-password: password
-TCP port: 1883
-
-## docker pull
+## docker run
 ```
-docker pull hapu2000/mosquitto
+docker run -p 1883:1883 -e MQTT_USER=<username> -e MQTT_PASS=<password> hapu2000/mosquitto
 ```
 
 ## docker-compose
@@ -19,4 +14,7 @@ services:
     restart: always
     ports:
       - 1883:1883
+    environment:
+      MQTT_USER: <username>
+      MQTT_PASS: <password>
 ```
