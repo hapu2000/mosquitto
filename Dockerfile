@@ -1,5 +1,5 @@
 FROM alpine:3.12
-RUN apk add --no-cache mosquitto gettext
+RUN apk add --no-cache mosquitto=1.6.9-r0 gettext=0.20.2-r0
 COPY src/etc/mosquitto /etc/mosquitto
 COPY ./docker-entrypoint.sh /
 EXPOSE 1883
