@@ -1,0 +1,14 @@
+name: Anchore Container Scan
+
+on: push
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+
+    steps:
+    - name: Scan image
+      uses: anchore/scan-action@v2
+      with:
+        path: "."
+
