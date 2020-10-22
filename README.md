@@ -1,4 +1,7 @@
-# mosquitto
+mosquitto
+=========
+
+[![GitHub Super-Linter](https://github.com/hapu2000/mosquitto/workflows/Super-Linter/badge.svg)](https://github.com/marketplace/actions/super-linter)
 
 ## docker run
 ```
