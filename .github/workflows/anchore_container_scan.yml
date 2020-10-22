@@ -9,3 +9,6 @@ jobs:
     steps:
     - name: Scan image
       uses: anchore/scan-action@v2
+      with:
+        path: "."
+
