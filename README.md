@@ -3,8 +3,14 @@
 [![GitHub Anchore Container Scan](https://github.com/hapu2000/mosquitto/workflows/Anchore%20Container%20Scan/badge.svg)](https://github.com/hapu2000/mosquitto/actions?query=workflow%3A%22Anchore+Container+Scan%22)
 
 ## docker run
+64bit
 ```bash
 docker run -p 1883:1883 -e MQTT_USER=<username> -e MQTT_PASS=<password> hapu2000/mosquitto
+```
+
+Raspberry Pi 3 (armv7)
+```bash
+docker run -p 1883:1883 -e MQTT_USER=<username> -e MQTT_PASS=<password> hapu2000/mosquitto:armv7
 ```
 
 ## docker-compose
